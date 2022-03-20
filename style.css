@@ -1,0 +1,275 @@
+    /*  animation: an 5s cubic-bezier(0.19, 1, 0.22, 1) infinite both; */
+
+    /* @keyframes an{
+        0%{
+            top: 5%;
+        }
+        50%{
+            top:55%
+        }
+        100%{
+            top: 5%;
+        }
+
+    } */
+*{
+    margin: 0;
+padding: 0;
+box-sizing: border-box;    
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#main{
+
+    
+    width: 100%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1448831338187-78296e6fdc4d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80);
+    background-position: center;
+    background-size: cover;
+}
+#nav{
+    width: 100%;
+    height: 10%;
+   display: flex;
+
+}
+#lnav{
+width: 50%;
+padding: 0 100px;
+align-items: center;
+justify-content: space-between;
+display: flex;
+
+}
+#lnav i{
+    font-size: 40px;
+    color:black;
+}
+#rnav{
+    width:50%;
+    padding: 0 100px;
+align-items: center;
+justify-content: space-between;
+display: flex;
+
+}
+#rnav a{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    font-family: "gilroy";
+}
+#dot{
+    width: 0.15%;
+    height: 80%;
+    position:absolute;
+    top: 15%;
+    left: 5%;
+    background-color:white;
+}
+#cir
+{
+    width: 10px;
+    height:10px;
+    position:absolute;
+    top: 0%;
+    left: -200%;
+    border-radius: 50%;
+    background-color:white;
+}
+#cir1
+{
+    width: 10px;
+    height:10px;
+    position:absolute;
+    top: 60%;
+    left: -200%;
+    border-radius: 50%;
+    background-color:white;
+}
+#cir2
+{
+    width: 10px;
+    height:10px;
+    position:absolute;
+    top: 30%;
+    left: -200%;
+    border-radius: 50%;
+    background-color:white;
+}
+#cir3
+{
+    width: 10px;
+    height:10px;
+    position:absolute;
+    top: 100%;
+    left: -200%;
+    border-radius: 50%;
+    background-color:white;
+}#txt{
+    position:absolute;
+    top: 47%;
+    left: 10%;
+    transform: translate(0,-50%);
+}
+#txt button{
+    font-size: 20px;
+    width: 160px;
+    font-family: "gilroy";
+    height: 20%;
+    margin-top: 5%;
+    background-color: peru;
+    text-align: center;
+    border-top: none;
+    border-radius: 30%;
+}
+#one{
+    font-family: "gilroy";
+    font-weight: 450;
+    font-size:120px;
+    color: white;
+}
+#txt p{
+    width: 45%;
+    color: white;
+    font-size: 10px;
+    font-family: "gilroy";
+}
+#imgdiv{
+    width: 50%;
+    height: 50%;
+    position:absolute;
+    top: 50%;
+    transform: translate(-0%,-50%);
+  display: flex;
+
+ 
+    left: 50%;
+    
+}
+#im1
+{
+    margin: -5px;
+   width: 40%;
+   
+border: none;
+   height: 100%;
+   align-items: center;
+   padding: 0;
+   justify-content: center;
+
+}
+#im1 img{
+    width: 100%;
+    
+    border-radius: 10%;
+    box-shadow: 0 0 100px 0px;
+}
+#im2
+{
+    margin: 10px;
+   width: 30%;
+   height: 100%;
+   align-items: center;
+   padding: 0;
+   justify-content: center;
+
+}
+#im2 img{
+    width: 100%;
+    height: 80%;
+    margin: 10px;
+    border-radius: 10%;
+}
+#im3
+{
+    margin: 10px;
+   width: 30%;
+   height: 100%;
+   align-items: center;
+   padding: 0;
+   justify-content: center;
+
+}
+#im3 img{
+    width: 100%;
+    margin: 10px;
+    height: 80%;
+    border-radius: 10%;
+}
+#next{
+    position:absolute;
+    bottom:2%;
+    right: 46%;
+  color:rgba(0, 0, 0, 0.623);
+    font-size: 40px;
+
+}
+#idea{
+    position:absolute;
+    bottom: 0%;
+    right: 2%;
+    font-family: "Indie Flower";
+    color: rgba(0, 0, 0, 0.705);
+}
+@media (max-width:500px) {
+    #lnav {
+        width: 10%;
+        padding: 0px 5px;
+    }
+    #rnav {
+        width: 90%;
+        padding: 0px 27px;
+    }
+    #rnav a{
+        font-size: 10px;
+    }
+    #txt{
+        top: 35%;
+        left: 10%;
+    }
+    #one {
+        font-family: "gilroy";
+        font-weight: 450;
+        font-size: 79px;
+        color: white;
+    }
+    #txt p {
+        width: 45%;
+        color: white;
+        font-size: 7px;
+    }
+    #imgdiv {
+        width: 87%;
+        height: 33%;
+        
+        top: 76%;
+       object-fit: cover;
+        left: 9%;
+    } #imgdiv i{
+        font-size: 8px;
+    }
+    #im2 {
+        margin: 0px;
+        width: 34%;
+        height: 78%;
+        padding: 4px
+    }
+    #im3 {
+        margin: 0px;
+        width: 34%;
+        height: 78%;
+        padding: 4px
+       
+    }
+    #next {
+        bottom: 4%;
+        right: 75%;
+        font-size: 26px;
+    }
+}
+
